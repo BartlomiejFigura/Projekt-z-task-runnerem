@@ -9,9 +9,10 @@ $hover-color: #fbc531; /*rise-n-shine-british-plt*/
 body {
     margin: 0;
     padding: 0;
-
+    font-size: 30px;
     font-family: $text-font;
     color: $text-color;
+    width: 1400px;
 }
 h1, h2, h3, h4, h5 { 
     font-family: $head-font;
@@ -27,8 +28,8 @@ ul {
     list-style-type: none;
 }
 .container {
-    padding: 20px;
-    margin: 4px;
+    padding: 0 20px;
+    margin: 0 auto;
 }
 .wrapper {
     display: flex;
@@ -39,8 +40,21 @@ ul {
 .row {
     flex: 1;
     flex-direction: row;
+    
+}
+.background {
+    height: 100vh;
+    background: url("/images/bubble-water.jpg"); 
+   background-size: cover;
+    width: 100%;
+    position: relative;
 }
 /*nav*/
+nav {
+    background-color: $background-color;
+    opacity: 0.7;
+    border-radius: 30px;
+}
 .nav-row {
     text-align: center;
     ul {
@@ -51,5 +65,30 @@ ul {
     }
 }
 /*splash*/
+.splash {
+    height: 100vh;
+    /*position: relative;*/
+    align-items: center;
+    
+}
+.splash-inner {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    background-color: $background-color;
+    opacity: 0.7;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+}
+.splash-btn {
+    padding: 5px;
+    background-color: $link-color;
+    color: $background-color;
+    border: solid, 1px;
+    border-radius: 10px;
+}
 /*services*/
 /*porfolio*/

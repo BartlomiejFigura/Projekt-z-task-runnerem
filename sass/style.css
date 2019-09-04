@@ -34,19 +34,24 @@ ul {
 }
 
 .wrapper {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
 }
 
 .row {
-  -ms-flex: 1;
-      flex: 1;
-  -ms-flex-direction: row;
-      flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 /*nav*/

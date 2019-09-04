@@ -23,11 +23,33 @@ a {
         color: $hover-color;
     }
 }
+ul {
+    list-style-type: none;
+}
 .container {
     padding: 20px;
     margin: 4px;
 }
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+}
+.row {
+    flex: 1;
+    flex-direction: row;
+}
 /*nav*/
+.nav-row {
+    text-align: center;
+    ul {
+        li {
+        float: left;
+        padding: 10px;
+        }
+    }
+}
 /*splash*/
 /*services*/
 /*porfolio*/

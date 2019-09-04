@@ -1,0 +1,33 @@
+/*Variables*/
+$head-font: 'Roboto Condensed', Sans-Serif;
+$text-font: 'Cabin', Sans-Serif;
+$background-color: #dcdde1; /*hint-ofpensive-british-pallete*/
+$text-color: #2f3640; /*electromagnetic-british-plt*/
+$link-color: #e1b12c; /*nanohanacha-gold-british-plt*/
+$hover-color: #fbc531; /*rise-n-shine-british-plt*/
+/*Global*/
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: $text-font;
+    color: $text-color;
+}
+h1, h2, h3, h4, h5 { 
+    font-family: $head-font;
+}
+a {
+    color: $link-color;
+    text-decoration: none;
+    &:hover {
+        color: $hover-color;
+    }
+}
+.container {
+    padding: 20px;
+    margin: 4px;
+}
+/*nav*/
+/*splash*/
+/*services*/
+/*porfolio*/

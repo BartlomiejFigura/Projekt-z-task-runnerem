@@ -1,0 +1,36 @@
+/*Variables*/
+/*hint-ofpensive-british-pallete*/
+/*electromagnetic-british-plt*/
+/*nanohanacha-gold-british-plt*/
+/*rise-n-shine-british-plt*/
+/*Global*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cabin", Sans-Serif;
+  color: #2f3640;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Roboto Condensed", Sans-Serif;
+}
+
+a {
+  color: #e1b12c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fbc531;
+}
+
+.container {
+  padding: 20px;
+  margin: 4px;
+}
+
+/*nav*/
+/*splash*/
+/*services*/
+/*porfolio*/
+/*# sourceMappingURL=style.css.map */

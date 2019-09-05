@@ -140,6 +140,19 @@ ul {
     width: 380px;
     height: 274px;
 }
+/*footer*/
+footer {
+    font-size: 25px;
+    text-align: center;
+    width: 750px;
+    p {
+        font-size: 12px;
+    }
+}
+
+    
+
+
 /*mediaqueriesformobile*/
 @media (max-width: 767px) {
     body {

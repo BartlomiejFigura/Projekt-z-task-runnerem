@@ -108,6 +108,23 @@ ul {
     border-radius: 10px;
 }
 /*services*/
+.services {
+    text-align: center;
+    padding: 12px;
+
+
+}
+.services-row {
+    padding: 12px;
+    i { 
+        color: $link-color;
+        font-size: 45px
+        
+    }
+    p {
+        color: $dark-color;
+    }
+}
 /*porfolio*/
 /*mediaqueriesformobile*/
 @media (max-width: 767px) {

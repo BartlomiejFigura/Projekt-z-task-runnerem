@@ -125,6 +125,24 @@ ul {
 }
 
 /*services*/
+.services {
+  text-align: center;
+  padding: 12px;
+}
+
+.services-row {
+  padding: 12px;
+}
+
+.services-row i {
+  color: #e1b12c;
+  font-size: 45px;
+}
+
+.services-row p {
+  color: #353b48;
+}
+
 /*porfolio*/
 /*mediaqueriesformobile*/
 @media (max-width: 767px) {

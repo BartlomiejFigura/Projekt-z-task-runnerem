@@ -3,14 +3,15 @@
 /*electromagnetic-british-plt*/
 /*nanohanacha-gold-british-plt*/
 /*rise-n-shine-british-plt*/
+/*blue-nights brt-plt*/
 /*Global*/
 body {
   margin: 0;
   padding: 0;
-  font-size: 30px;
+  font-size: 28px;
   font-family: "Cabin", Sans-Serif;
   color: #2f3640;
-  width: 1400px;
+  /*width: 1400px;*/
 }
 
 h1, h2, h3, h4, h5 {
@@ -60,19 +61,32 @@ ul {
 }
 
 /*nav*/
-nav {
+.nav-btn {
   background-color: #dcdde1;
   opacity: 0.7;
   border-radius: 30px;
+  padding: 4px;
 }
 
 .nav-row {
   text-align: center;
 }
 
+.nav-row h3 {
+  background-color: #dcdde1;
+  opacity: 0.7;
+  border-radius: 30px;
+  width: 140px;
+}
+
+.nav-row ul {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
 .nav-row ul li {
   float: left;
-  padding: 10px;
+  padding: 4px;
 }
 
 /*splash*/
@@ -97,13 +111,57 @@ nav {
 }
 
 .splash-btn {
-  padding: 5px;
-  background-color: #e1b12c;
+  margin: 0 0 10px 0;
+  padding: 20px;
+  background-color: #2f3640;
   color: #dcdde1;
   border: solid, 1px;
   border-radius: 10px;
 }
 
+.splash-btn:hover {
+  color: #dcdde1;
+  background-color: #353b48;
+}
+
 /*services*/
 /*porfolio*/
+/*mediaqueriesformobile*/
+@media (max-width: 767px) {
+  body {
+    font-size: 20px;
+  }
+  .nav-row h3 {
+    margin: 10px auto;
+    width: 100px;
+  }
+  .nav-row li {
+    margin: 2px auto;
+  }
+  .wrapper {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .splash-btn {
+    padding: 10px;
+  }
+  .splash-inner {
+    padding: 10px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    translate: transform(-70%, -50%);
+  }
+  .nav-btn {
+    background-color: #dcdde1;
+    opacity: 0.9;
+    border-radius: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 23px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

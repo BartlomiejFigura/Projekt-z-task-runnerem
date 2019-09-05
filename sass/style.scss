@@ -5,14 +5,15 @@ $background-color: #dcdde1; /*hint-ofpensive-british-pallete*/
 $text-color: #2f3640; /*electromagnetic-british-plt*/
 $link-color: #e1b12c; /*nanohanacha-gold-british-plt*/
 $hover-color: #fbc531; /*rise-n-shine-british-plt*/
+$dark-color: #353b48; /*blue-nights brt-plt*/
 /*Global*/
 body {
     margin: 0;
     padding: 0;
-    font-size: 30px;
+    font-size: 28px;
     font-family: $text-font;
     color: $text-color;
-    width: 1400px;
+    /*width: 1400px;*/
 }
 h1, h2, h3, h4, h5 { 
     font-family: $head-font;
@@ -50,20 +51,30 @@ ul {
     position: relative;
 }
 /*nav*/
-nav {
+.nav-btn {
     background-color: $background-color;
     opacity: 0.7;
     border-radius: 30px;
+    padding: 4px;
 }
 .nav-row {
+    h3 {
+        background-color: $background-color;
+        opacity: 0.7;
+        border-radius: 30px; 
+        width: 140px;
+    }
     text-align: center;
-    ul {
-        li {
-        float: left;
-        padding: 10px;
+    ul 
+        
+        {   padding-inline-start: 0;
+            li {
+            float: left;
+            padding: 4px;
         }
     }
 }
+
 /*splash*/
 .splash {
     height: 100vh;
@@ -84,11 +95,65 @@ nav {
     text-align: center;
 }
 .splash-btn {
-    padding: 5px;
-    background-color: $link-color;
+    margin: 0 0 10px 0;
+    padding: 20px;
+    background-color: $text-color;
+    &:hover {
+            color: $background-color;
+            background-color: $dark-color;
+        
+    }
     color: $background-color;
     border: solid, 1px;
     border-radius: 10px;
 }
 /*services*/
 /*porfolio*/
+/*mediaqueriesformobile*/
+@media (max-width: 767px) {
+    body {
+        font-size: 20px;
+    }
+    .nav-row{
+        
+        h3 {
+           margin: 10px auto;
+           width: 100px;
+        }
+        li {
+            margin: 2px auto;
+            
+        }
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    .splash-btn {
+        padding: 10px;
+    }
+    .splash-inner {
+        padding: 10px;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        translate: transform(-70%, -50%);
+    }
+    .nav-btn {
+        background-color: $background-color;
+        opacity: 0.9;
+        border-radius: 30px;
+        
+    }
+    
+
+}
+@media (min-width: 768px) and (max-width: 991px) /*medaqueriesfortablets*/
+
+{
+    body {
+        font-size: 23px;
+    }
+
+
+
+}

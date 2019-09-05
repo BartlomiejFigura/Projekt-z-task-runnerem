@@ -10,7 +10,7 @@ $dark-color: #353b48; /*blue-nights brt-plt*/
 body {
     margin: 0;
     padding: 0;
-    font-size: 28px;
+    font-size: 26px;
     font-family: $text-font;
     color: $text-color;
     /*width: 1400px;*/
@@ -35,12 +35,13 @@ ul {
 .wrapper {
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 
 }
 .row {
     flex: 1;
     flex-direction: row;
+    /*padding: 20px;*/
     
 }
 .background {
@@ -115,7 +116,7 @@ ul {
 
 }
 .services-row {
-    padding: 12px;
+    
     i { 
         color: $link-color;
         font-size: 45px
@@ -126,6 +127,19 @@ ul {
     }
 }
 /*porfolio*/
+.portfolio {
+    text-align: center;
+    padding: 20px;
+}
+.porfolio-row {
+    
+    margin: 20px;
+    
+}
+.image {
+    width: 380px;
+    height: 274px;
+}
 /*mediaqueriesformobile*/
 @media (max-width: 767px) {
     body {
@@ -164,11 +178,25 @@ ul {
     
 
 }
-@media (min-width: 768px) and (max-width: 991px) /*medaqueriesfortablets*/
+@media (min-width: 939px) and (max-width: 1034px) /*medaqueriesfortablets*/
 
 {
     body {
         font-size: 23px;
+    }
+
+
+
+}
+@media (min-width: 768px) and (max-width: 938px) /*medaqueriesfortablets*/
+
+{
+    
+    .nav-btn {
+        padding: 2px;
+        flex-wrap: nowrap;
+        font-size: 18px;
+        
     }
 
 

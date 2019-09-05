@@ -29,7 +29,7 @@ ul {
     list-style-type: none;
 }
 .container {
-    padding: 0 20px;
+    padding:  20px;
     margin: 0 auto;
 }
 .wrapper {
@@ -41,7 +41,7 @@ ul {
 .row {
     flex: 1;
     flex-direction: row;
-    /*padding: 20px;*/
+    /*padding: 20px 0;*/
     
 }
 .background {
@@ -116,6 +116,7 @@ ul {
 
 }
 .services-row {
+    padding: 20px;
     
     i { 
         color: $link-color;
@@ -142,11 +143,15 @@ ul {
 }
 /*footer*/
 footer {
-    font-size: 25px;
-    text-align: center;
-    width: 750px;
+    font-size: 50px;
+    text-align: left;
+    
     p {
+        text-align: center;
         font-size: 12px;
+    }
+    span {
+        font-size: 0;
     }
 }
 
@@ -188,6 +193,9 @@ footer {
         border-radius: 30px;
         
     }
+    footer {
+        text-align: center;
+    }
     
 
 }
@@ -206,9 +214,9 @@ footer {
 {
     
     .nav-btn {
-        padding: 2px;
+        padding: 1px;
         flex-wrap: nowrap;
-        font-size: 18px;
+        font-size: 19px;
         
     }
 
